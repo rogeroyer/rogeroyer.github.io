@@ -1,4 +1,4 @@
-# 参考代码
+# Answer
 
 ## Question one
 ```c
