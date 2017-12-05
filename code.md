@@ -1,3 +1,5 @@
+# 参考代码
+
 ## Question one
 ```c
 #include<stdio.h>
@@ -19,7 +21,7 @@ int main()
 
 ## Question two
 ```c
-  #include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int i,a,b,c,d;
