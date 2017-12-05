@@ -1,4 +1,4 @@
-## Question one: 计算ax^2+bx+c=0当a,b,c取不同值的时候x的解：
+## Question one
 ```c
 #include<stdio.h>
 #include<math.h>
@@ -17,7 +17,7 @@ int main()
 }
 ```
 
-## Question two: 输出所有的回龙数；回龙数就是一个五位数，第一位和最后一位相同，第二位和倒数第二位相同，例如：12821、56965……
+## Question two
 ```c
   #include<stdio.h>
 int main()
@@ -38,7 +38,7 @@ int main()
 }
 ```
 
-## Question three:输入分数（乱序输入10个数），然后去掉一个最高分和一个最低分，输出删除后的数组，再求平均分，最后再输出保留两位小数的平均分。。
+## Question three
 
 ```c
 #include<stdio.h>
