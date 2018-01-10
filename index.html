@@ -2,16 +2,54 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>表单元素</title>
+<script type="text/javascript">
+	function Results(name, suggestion, fruit, sport, city){
+//		confirm(name.value);
+//		document.write(city.value);
+//		document.write(suggestion.value);
+
+		document.writeln("Hello" + name.value);
+		document.writeln(", 你的意见是："+ suggestion.value);
+		document.writeln(",你喜欢的城市是："+city.value);
+
+<!--		alert("Hello" + name.value + ", 你的意见是："+ suggestion.value +",你喜欢的城市是："+city.value);    -->
+<!--		document.write("Hello" + name.value + ", 你的意见是："+ suggestion.value +",你喜欢的城市是："+city.value);  -->
+		
+		
+		
+//		for (i = 0;i < fruit.length;i++)
+//		{
+//			if(fruit[i].checked == true)
+//				Fruit = fruit[i].value;
+//		}
+		
+/*		Sport = "";
+		document.write("你喜欢的运动是:"+Sport);
+		for (i = 0;i < sport.length;i++)
+		{
+			if(sport[i].checked == true) {
+				Sport = Sport + sport[i].value + ",";
+				alert(sport[i].value);
+			}
+		}
+		document.write("你喜欢的运动是:"+Sport);
+*/
+<!-- ", 你喜欢的水果是："+ Fruit +", 你喜欢的运动是："+sport.value+ -->
+
+<!--		document.write("Hello" + name.value + ", 你的意见是："+ suggestion.value +",你喜欢的城市是："+city.value); -->
+	}
+</script>
 </head>
 
 <body bgcolor="#FFFFCC" text="#333366" link="#CC3333" vlink="#FFFFFF" leftmargin=600  topmargin="100">
-<form action="http://www.baidu.com/s" method="post">
+<form name="info">
+
 请输入你的姓名：<br>
-<input type="text" name="yourname" placeholder="roger"> <br>
+<input type="text" name="name" placeholder="roger"> <br>
 
 
 <br>请提出宝贵意见：<br>
-<textarea name="yoursuggestion" col=10 rows=10 placeholder="我爱学习">
+<textarea name="suggestion" col=10 rows=10 placeholder="我爱学习">
 </textarea> <br>
 
 <br>请选择你喜欢的水果：<br>
@@ -29,14 +67,18 @@
 
 请选择你喜欢的城市:<br>
 <select name="city">
-<option value="ChongQing">重庆
+<option selected value="ChongQing">重庆
 <option value="ChengDu">成都
 <option value="Newyork">纽约
 <option value="paris">巴黎
 </select> <br>
+<!--
+document.getElementById("city")
+document.info.city
+-->
 
-
-<br><input type="submit" value="提交"> &nbsp &nbsp &nbsp <input type="reset" value="重置">
+<br><input type="button" value="提交" onClick="Results(document.info.name, document.info.suggestion, document.info.fruit, document.info.sport, document.info.city)"> 
+&nbsp &nbsp &nbsp <input type="reset" value="重置">
 
 </form>
 
