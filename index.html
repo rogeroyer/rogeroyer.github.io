@@ -42,7 +42,7 @@
 </head>
 
 <body bgcolor="#FFFFCC" text="#333366" link="#CC3333" vlink="#FFFFFF" leftmargin=600  topmargin="100">
-<form name="info">
+<form name="info" action="display.php" method="post">
 
 请输入你的姓名：<br>
 <input type="text" name="name" placeholder="roger"> <br>
@@ -77,8 +77,10 @@ document.getElementById("city")
 document.info.city
 -->
 
-<br><input type="button" value="提交" onClick="Results(document.info.name, document.info.suggestion, document.info.fruit, document.info.sport, document.info.city)"> 
+<br><input type="button" value="确认" onClick="Results(document.info.name, document.info.suggestion, document.info.fruit, document.info.sport, document.info.city)"> 
 &nbsp &nbsp &nbsp <input type="reset" value="重置">
+&nbsp &nbsp &nbsp <input type="submit" value="提交">
+&nbsp &nbsp &nbsp <input type="image" src="button.gif" name="提交" />
 
 </form>
 
